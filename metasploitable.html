@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>192.168.18.206 / 192.168.18.206 port 8180</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>192.168.18.206</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>192.168.18.206</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>8180</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>Apache-Coyote/1.1</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/favicon.ico</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/favicon.ico: identifies this app/server as: Apache Tomcat (possibly 5.5.26 through 8.0.15), Alfresco Community.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/favicon.ico">http://192.168.18.206:8180/favicon.ico</a><br>
+      <a href="http://192.168.18.206:8180/favicon.ico">http://192.168.18.206:8180/favicon.ico</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://en.wikipedia.org/wiki/Favicon'>https://en.wikipedia.org/wiki/Favicon</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>OPTIONS</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>OPTIONS: Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, TRACE, OPTIONS .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>ZWNAQVJN</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Web Server returns a valid response with junk HTTP methods which may cause false positives.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Appears to be a default Apache Tomcat install.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a><br>
+      <a href="http://192.168.18.206:8180/">http://192.168.18.206:8180/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/: Cookie JSESSIONID created without the httponly flag.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/">http://192.168.18.206:8180/admin/</a><br>
+      <a href="http://192.168.18.206:8180/admin/">http://192.168.18.206:8180/admin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/contextAdmin/contextAdmin.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/contextAdmin/contextAdmin.html: Tomcat may be configured to let attackers read arbitrary files. Restrict access to /admin.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/contextAdmin/contextAdmin.html">http://192.168.18.206:8180/admin/contextAdmin/contextAdmin.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/contextAdmin/contextAdmin.html">http://192.168.18.206:8180/admin/contextAdmin/contextAdmin.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0672'>CVE-2000-0672</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/">http://192.168.18.206:8180/admin/</a><br>
+      <a href="http://192.168.18.206:8180/admin/">http://192.168.18.206:8180/admin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/tomcat-docs/index.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/tomcat-docs/index.html: Default Apache Tomcat documentation found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/tomcat-docs/index.html">http://192.168.18.206:8180/tomcat-docs/index.html</a><br>
+      <a href="http://192.168.18.206:8180/tomcat-docs/index.html">http://192.168.18.206:8180/tomcat-docs/index.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-552.html'>CWE-552</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/manager/html-manager-howto.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/manager/html-manager-howto.html: Tomcat documentation found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/manager/html-manager-howto.html">http://192.168.18.206:8180/manager/html-manager-howto.html</a><br>
+      <a href="http://192.168.18.206:8180/manager/html-manager-howto.html">http://192.168.18.206:8180/manager/html-manager-howto.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-552.html'>CWE-552</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/manager/manager-howto.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/manager/manager-howto.html: Tomcat documentation found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/manager/manager-howto.html">http://192.168.18.206:8180/manager/manager-howto.html</a><br>
+      <a href="http://192.168.18.206:8180/manager/manager-howto.html">http://192.168.18.206:8180/manager/manager-howto.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-552.html'>CWE-552</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/webdav/index.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/webdav/index.html: WebDAV support is enabled.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/webdav/index.html">http://192.168.18.206:8180/webdav/index.html</a><br>
+      <a href="http://192.168.18.206:8180/webdav/index.html">http://192.168.18.206:8180/webdav/index.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/jsp-examples/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/jsp-examples/: Apache Java Server Pages documentation.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/jsp-examples/">http://192.168.18.206:8180/jsp-examples/</a><br>
+      <a href="http://192.168.18.206:8180/jsp-examples/">http://192.168.18.206:8180/jsp-examples/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-552.html'>CWE-552</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/account.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/account.html: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/account.html">http://192.168.18.206:8180/admin/account.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/account.html">http://192.168.18.206:8180/admin/account.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/controlpanel.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/controlpanel.html: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/controlpanel.html">http://192.168.18.206:8180/admin/controlpanel.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/controlpanel.html">http://192.168.18.206:8180/admin/controlpanel.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/cp.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/cp.html: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/cp.html">http://192.168.18.206:8180/admin/cp.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/cp.html">http://192.168.18.206:8180/admin/cp.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/index.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/index.html: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/index.html">http://192.168.18.206:8180/admin/index.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/index.html">http://192.168.18.206:8180/admin/index.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/login.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/login.html: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/login.html">http://192.168.18.206:8180/admin/login.html</a><br>
+      <a href="http://192.168.18.206:8180/admin/login.html">http://192.168.18.206:8180/admin/login.html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/servlets-examples/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/servlets-examples/: Tomcat servlets examples are visible.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/servlets-examples/">http://192.168.18.206:8180/servlets-examples/</a><br>
+      <a href="http://192.168.18.206:8180/servlets-examples/">http://192.168.18.206:8180/servlets-examples/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/manager/html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/manager/html: Default account found for 'Tomcat Manager Application' at (ID 'tomcat', PW 'tomcat'). Apache Tomcat.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/manager/html">http://192.168.18.206:8180/manager/html</a><br>
+      <a href="http://192.168.18.206:8180/manager/html">http://192.168.18.206:8180/manager/html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cwe.mitre.org/data/definitions/CWE-16.html'>CWE-16</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/manager/html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/manager/html: Tomcat Manager / Host Manager interface found (pass protected).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/manager/html">http://192.168.18.206:8180/manager/html</a><br>
+      <a href="http://192.168.18.206:8180/manager/html">http://192.168.18.206:8180/manager/html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/host-manager/html</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/host-manager/html: Tomcat Manager / Host Manager interface found (pass protected).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/host-manager/html">http://192.168.18.206:8180/host-manager/html</a><br>
+      <a href="http://192.168.18.206:8180/host-manager/html">http://192.168.18.206:8180/host-manager/html</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/manager/status</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/manager/status: Tomcat Server Status interface found (pass protected).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/manager/status">http://192.168.18.206:8180/manager/status</a><br>
+      <a href="http://192.168.18.206:8180/manager/status">http://192.168.18.206:8180/manager/status</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/login.jsp</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/login.jsp: Tomcat Server Administration interface found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://192.168.18.206:8180/admin/login.jsp">http://192.168.18.206:8180/admin/login.jsp</a><br>
+      <a href="http://192.168.18.206:8180/admin/login.jsp">http://192.168.18.206:8180/admin/login.jsp</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>2025-01-19 11:19:13</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2025-01-19 11:19:48</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>35 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>8226 requests, 0 errors, 27 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h 192.168.18.206 -port 8180 -output metasploitable.html</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sun Jan 19 11:19:13 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Sun Jan 19 11:19:48 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>35 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
